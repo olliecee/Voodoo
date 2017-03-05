@@ -1,5 +1,5 @@
 # Voodoo
-[![Build Status][travis-badge]][travis-badge-url]
+[![DUB](https://img.shields.io/dub/l/vibe-d.svg)]() [![Chrome Web Store](https://img.shields.io/chrome-web-store/stars/nimelepbpejjlbmoobocpfnjhihnpked.svg)]() [![GitHub release](https://img.shields.io/github/release/qubyte/rubidium.svg)]()
 
 Voodoo is a health and wellness tracking app that collects day-to-day information on pains (soreness, ache, rash, etc). Using data trends to solve potential causes of reoccurring stress or trauma as well as suggesting solutions.
 
@@ -34,7 +34,7 @@ Currently, the features that Voodoo contains are:
 - Express
 - MongoDB
 
-Now you can continue working on the new project.
+![alt text](https://raw.githubusercontent.com/olliecee/Voodoo/master/Voodoo.png "Voodoo")
 
 ## Prerequisites
 
