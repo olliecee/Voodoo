@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Loading</title>
+
+    <!-- CSS - Vendor -->
+    <link rel="stylesheet" href="bower_components/normalize-css/normalize.css"/>
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="bower_components/animate.css/animate.min.css"/>
+
+    <!-- CSS - Fonts -->
+    <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Nunito:400,700" rel="stylesheet">
+
+    <!-- CSS - Custom -->
+    <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+    <section class="container global loader">
+        <div class="row intro" style="height: 33%">
+            <div class="loaderItem col-8 offset-2 text-center">
+                <div class="wow fadeInDown">
+                    <h4>Welcome Back</h4>
+                    <h3>Oliver</h3>
+                </div>
+            </div>
+        </div>
+
+        <div class="row loading" style="height: 34%">
+            <div class="loaderItem col-8 offset-2 text-center">
+                <div class="wow fadeIn">
+                    <img id="loadingFinger" src="images/FingerPrint.png" />
+                </div>
+            </div>
+        </div>
+
+        <div class="row loadingBar" style="height: 33%;">
+            <div class="loaderItem col-8 offset-2 text-center">
+                <div class="wow fadeInUp">
+                    <h3>Voodoo</h3>
+                    <h4>Loading</h4>
+                    <div id="loadingBar"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="loadingCircle">
+        <img class="fa fa-spin" src="images/LoadingCircle.png" />
+    </div>
+
+    <!-- JS - Vendor -->
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/tether/dist/js/tether.min.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="bower_components/wow/dist/wow.min.js"></script>
+    <script src="bower_components/progressbar.js/dist/progressbar.min.js"></script>
+    <script src="js/flowtype.js"></script>
+
+    <!-- JS - Custom -->
+    <script src="js/script.js"></script>
+    <script>
+        $(function() {
+            // Tether
+            new Tether({
+                element: loadingCircle,
+                target: loadingFinger,
+                attachment: 'middle center',
+                targetAttachment: 'middle center'
+            });
+        });
+
+        // Progress Bar
+        var bar = new ProgressBar.Line('#loadingBar', {
+            strokeWidth: 4,
+            easing: 'easeInOut',
+            duration: 1400,
+            color: '#FFEA82',
+            trailColor: '#eee',
+            trailWidth: 1,
+            svgStyle: {width: '100%', height: '100%'},
+            from: {color: '#00b1b3'},
+            to: {color: '#1d5086'},
+            step: (state, bar) => {
+                bar.path.setAttribute('stroke', state.color);
+            }
+        });
+
+        bar.animate(1.0);  // Number from 0.0 to 1.0
+    </script>
+</body>
+</html>

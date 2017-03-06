@@ -1,0 +1,119 @@
+body {
+    font-family: 'Nunito', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    line-height: 1.45;
+}
+
+h1 { font-size: 4em; }
+h2 { font-size: 3em; }
+h3 { font-size: 2em; }
+h4 { font-size: 1em; }
+h5 { font-size: .9em; }
+
+section.global {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: url("../images/Pattern.png"), -webkit-linear-gradient(135deg,#00b1b3,#1d5086);
+    background: url("../images/Pattern.png"), linear-gradient(-45deg,#00b1b3,#1d5086);
+    color: #fff;
+}
+
+/* Loading */
+    section.loader .intro,
+    section.loader .loading,
+    section.loader .loadingBar {
+        position: relative;
+    }
+
+    section.loader .intro .loaderItem,
+    section.loader .loading .loaderItem,
+    section.loader .loadingBar .loaderItem {
+        position: absolute;
+        top: 50%;
+        transform: translate(0, -50%)
+    }
+
+    /* Intro */
+    section.loader .intro {
+        color: white;
+    }
+
+    section.loader .intro h3 {
+        text-transform: uppercase;
+        font-weight: 700;
+    }
+
+    section.loader .intro h4 {
+        text-transform: capitalize;
+        margin-bottom: 0;
+    }
+
+    /* Loading */
+    section.loader .loading img#loadingFinger {
+        width: 100%;
+        height: auto;
+        max-width: 80px;
+    }
+
+    #loadingCircle {
+        width: 200px;
+    }
+
+    #loadingCircle img  {
+        width: 100%;
+    }
+
+    /* Loading Bar */
+    section.loader .loadingBar {
+        color: white;
+    }
+
+    section.loader .loadingBar h3,
+    section.loader .loadingBar h4 {
+        text-transform: uppercase;
+    }
+
+    section.loader .loadingBar h3 {
+        font-weight: 700;
+        margin-bottom: 0;
+    }
+
+    section.loader #thing {
+        width: 100%;
+        height: 8px;
+    }
+/* Loading End */
+
+/* Sign Up */
+section .signupMaster {
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+section .signupMaster .signupChild {
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    width: 100%;
+}
+
+section .signupMaster h3 {
+    text-transform: uppercase;
+    margin-bottom: 0;
+    font-weight: 700;
+}
+
+section .signupMaster .form-control {
+    background-color: rgba(255,255,255,.5);
+    margin-bottom: 15px;
+}
+
+section .signupMaster button {
+    background-color: rgba(255,255,255,.8);
+}

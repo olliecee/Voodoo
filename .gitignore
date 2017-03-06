@@ -1,7 +1,7 @@
 .idea
 .vs
 node_modules
-src/bower_components
+FrontEndDevelopment/bower_components
 jspm_packages
 npm-debug.log
 debug.log

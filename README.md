@@ -23,7 +23,7 @@ Currently, the features that Voodoo contains are:
   - Normalize
   - jQuery
   - Tether (Bootstrap 4 dependency)
-  - Bootstrap 4 RC4 (Alpha)
+  - Bootstrap 4 (Alpha6)
   - Animate.css
   - Wow.js
   - Font Awesome
