@@ -1,11 +1,10 @@
+html, body, header
+{ background-color: #e9815e }
+
 body {
     font-family: 'Nunito', sans-serif;
     font-size: 18px;
     font-weight: 400;
-}
-
-header {
-    background-color: #e9815e;
 }
 
 nav ul li {
@@ -22,6 +21,11 @@ nav ul li a:hover {
     text-decoration: none;
 }
 
+section {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
 /* Intro */
 section.intro {
     background-image: url("../images/web-section1bg.jpg");
@@ -30,7 +34,6 @@ section.intro {
     background-position: center;
     background-position-x: -50px;
     width: 100%;
-    padding: 100px;
 }
 
 section.intro h1 {
@@ -60,11 +63,14 @@ section.intro .introDownload h2 {
 }
 
 /* */
+.testable {
+    max-width: 160px;
+    width: 100%;
+}
 
 /* Slider */
 section.slider {
     background-color: #e9815e;
-    padding: 50px;
 }
 
 section.slider h2 {
@@ -83,3 +89,55 @@ section.slider .btn-learn {
     -moz-border-radius: 3px;
     border-radius: 3px;
 }
+
+/* Info */
+section.info {
+    background-color: white;
+    width: 100%;
+}
+
+section.info img.voodooWatch {
+    margin-top: -160px;
+    width: 100%;
+    height: auto;
+    max-width: 300px;
+}
+
+section.info .incerp {
+    margin-bottom: 50px;
+    text-align: right;
+}
+
+section.info h2 {
+    font-weight: 700;
+    text-transform: capitalize;
+}
+
+.amcharts-graph-g1 .amcharts-graph-fill {
+    filter: url(#blur);
+}
+
+.amcharts-graph-g2 .amcharts-graph-fill {
+    filter: url(#blur);
+}
+
+.amcharts-cursor-fill {
+    filter: url(#shadow);
+}
+
+#chartdiv {
+    width: 100%;
+    height: 275px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+}
+
+#chartBar {
+    height: 200px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+a[title~="JavaScript"] { display: none !important; }
