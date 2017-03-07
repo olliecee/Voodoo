@@ -1,0 +1,85 @@
+body {
+    font-family: 'Nunito', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+header {
+    background-color: #e9815e;
+}
+
+nav ul li {
+    margin-left: 45px;
+    margin-right: 45px;
+}
+
+nav ul li:first-child { margin-left: 0 }
+nav ul li:last-child { margin-right: 0 }
+
+nav ul li a,
+nav ul li a:hover {
+    color: white;
+    text-decoration: none;
+}
+
+/* Intro */
+section.intro {
+    background-image: url("../images/web-section1bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-position-x: -50px;
+    width: 100%;
+    padding: 100px;
+}
+
+section.intro h1 {
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: 700;
+}
+section.intro h1 span { color: #e9815e }
+
+section.intro h2 {
+    font-size: 1.7em;
+    font-weight: 700;
+}
+
+section.intro .calltoIntro { margin-top: 35px }
+
+section.intro .introDownload { margin-top: 140px }
+section.intro .introDownload img,
+section.intro .introDownload svg {
+    width: 100%;
+    height: auto;
+}
+
+section.intro .introDownload h2 {
+    color: white;
+    margin-bottom: 20px;
+}
+
+/* */
+
+/* Slider */
+section.slider {
+    background-color: #e9815e;
+    padding: 50px;
+}
+
+section.slider h2 {
+    color: white;
+    font-weight: 700;
+}
+
+section.slider p {
+    color: black;
+}
+
+section.slider .btn-learn {
+    color: white;
+    background-color: #30373b;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
