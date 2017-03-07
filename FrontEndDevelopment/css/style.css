@@ -18,8 +18,8 @@ section.global {
     position: fixed;
     width: 100%;
     height: 100%;
-    background: url("../images/Pattern.png"), -webkit-linear-gradient(135deg,#00b1b3,#1d5086);
-    background: url("../images/Pattern.png"), linear-gradient(-45deg,#00b1b3,#1d5086);
+    background: url("../images/Pattern.png"), -webkit-linear-gradient(135deg,#fab15b,#f96332);
+    background: url("../images/Pattern.png"), linear-gradient(-45deg,#fab15b,#f96332);
     color: #fff;
 }
 

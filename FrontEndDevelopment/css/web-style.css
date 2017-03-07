@@ -21,7 +21,7 @@ nav ul li a:hover {
     text-decoration: none;
 }
 
-section {
+section, footer {
     padding-top: 100px;
     padding-bottom: 100px;
 }
@@ -104,7 +104,6 @@ section.info img.voodooWatch {
 }
 
 section.info .incerp {
-    margin-bottom: 50px;
     text-align: right;
 }
 
@@ -125,7 +124,7 @@ section.info h2 {
     filter: url(#shadow);
 }
 
-#chartdiv {
+#chartDiv {
     width: 100%;
     height: 275px;
     margin-left: auto;
@@ -141,3 +140,66 @@ section.info h2 {
 }
 
 a[title~="JavaScript"] { display: none !important; }
+
+/* Image Slit */
+section.identity {
+    background-color: white;
+    background-image: url("../images/web-main2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    max-height: 410px;
+    height: auto
+}
+
+section.identity h2 {
+    margin-bottom: 0;
+    font-weight: 700;
+    color: white;
+    padding-top: 55px;
+    padding-bottom: 55px;
+}
+
+section.identity h2 span {
+    text-transform: uppercase;
+}
+
+section.identity h2 span b {
+    color: #e9815e;
+}
+
+/* Usability */
+section.usability {
+    background-color: white;
+}
+
+section.usability h1 {
+    font-weight: 700;
+}
+
+section.usability .incerp {
+    text-align: right;
+}
+
+section.usability img {
+    margin-top: -20px;
+    margin-bottom: -400px;
+}
+
+/* Footer */
+footer .introDownload { margin-top: 40px }
+footer .introDownload img,
+footer .introDownload svg {
+    width: 100%;
+    height: auto;
+}
+
+footer h1 {
+    text-transform: capitalize;
+    font-weight: 700;
+    color: white;
+}
+
+footer p {
+    margin-top: 40px;
+}
