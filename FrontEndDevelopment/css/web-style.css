@@ -26,13 +26,41 @@ section, footer {
     padding-bottom: 100px;
 }
 
+/* Header */
+header .navbar-brand img {
+    height: auto;
+    width: 40px;
+}
+
+/* Intro: Ichi & Gon */
+.ichi, .gon {
+    position: fixed;
+    width: 230px;
+    height: 413px;
+    padding: 0;
+    background: url("../images/Pattern.png"), -webkit-linear-gradient(135deg,rgba(249,99,50,.25),rgba(250,177,91,.75));
+    background: url("../images/Pattern.png"), linear-gradient(-45deg,rgba(249,99,50,.25),rgba(250,177,91,.75));
+}
+
+
+.ichi .ichiHeader,
+.ichi .container img,
+.gon .gonHeader,
+.gon .container img {
+    width: 100%;
+    height: auto;
+}
+
+.ichi .ichiContent img[alt="Human body"] {
+    width: 80px
+}
+
 /* Intro */
 section.intro {
     background-image: url("../images/web-section1bg.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    background-position-x: -50px;
     width: 100%;
 }
 
@@ -42,6 +70,13 @@ section.intro h1 {
     font-weight: 700;
 }
 section.intro h1 span { color: #e9815e }
+
+.mobileUI {
+    overflow: hidden;
+    background-color: white;
+    width: 230px;
+    height: 413px;
+}
 
 section.intro h2 {
     font-size: 1.7em;
@@ -60,6 +95,90 @@ section.intro .introDownload svg {
 section.intro .introDownload h2 {
     color: white;
     margin-bottom: 20px;
+}
+
+/* Loader */
+section.global {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: url("../images/Pattern.png"), -webkit-linear-gradient(135deg,#fab15b,#f96332);
+    background: url("../images/Pattern.png"), linear-gradient(-45deg,#fab15b,#f96332);
+    color: #fff;
+    padding: 0;
+}
+
+/* Loading */
+section.loader .intro,
+section.loader .loading,
+section.loader .loadingBar {
+    position: relative;
+}
+
+section.loader h1 { font-size: 4em; }
+section.loader h2 { font-size: 3em; }
+section.loader h3 { font-size: 2em; }
+section.loader h4 { font-size: 1em; }
+section.loader h5 { font-size: .9em; }
+
+section.loader .intro .loaderItem,
+section.loader .loading .loaderItem,
+section.loader .loadingBar .loaderItem {
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%)
+}
+
+/* Intro */
+section.loader .intro {
+    color: white;
+}
+
+section.loader .intro h3 {
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+section.loader .intro h4 {
+    text-transform: capitalize;
+    margin-bottom: 0;
+}
+
+/* Loading */
+section.loader .loading img#loadingFinger {
+    width: 100%;
+    height: auto;
+    max-width: 80px;
+}
+
+#loadingCircle {
+    width: 200px;
+}
+
+#loadingCircle img  {
+    height: auto;
+    width: 80%;
+    margin-left: 21px;
+}
+
+/* Loading Bar */
+section.loader .loadingBar {
+    color: white;
+}
+
+section.loader .loadingBar h3,
+section.loader .loadingBar h4 {
+    text-transform: uppercase;
+}
+
+section.loader .loadingBar h3 {
+    font-weight: 700;
+    margin-bottom: 0;
+}
+
+section.loader #thing {
+    width: 100%;
+    height: 8px;
 }
 
 /* */
@@ -181,10 +300,34 @@ section.usability .incerp {
     text-align: right;
 }
 
-section.usability img {
+section.usability img.voodooMain {
+    position: relative;
     margin-top: -20px;
     margin-bottom: -400px;
+    z-index: 1000;
 }
+
+section.usability img.voodooChild,
+section.usability img.voodooChild2 {
+    position: absolute;
+    opacity: .8;
+    z-index: 0;
+}
+
+section.usability img.voodooChild {
+    margin-left: -110px;
+    width: auto;
+    height: 450px;
+    margin-top: 30px;
+}
+
+section.usability img.voodooChild2 {
+    margin-left: 146px;
+    width: auto;
+    height: 450px;
+    margin-top: 30px;
+}
+
 
 /* Footer */
 footer .introDownload { margin-top: 40px }
